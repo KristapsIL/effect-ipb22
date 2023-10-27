@@ -7,7 +7,7 @@ function App() {
     completed: false,
   }];
   const todoJSX = todos.map((doom, index)=>{
-    <Todo/>
+    <Todo key={index} />
   });
   return (
     <>
