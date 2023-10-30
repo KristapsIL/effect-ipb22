@@ -1,18 +1,14 @@
 import Todo from "./Todo";
 function App() {
-  const todos = [{
+  const toDo = {
     userId: 1,
     id:1,
     title:"delectus",
-    completed: false,
-  }];
-  const todoJSX = todos.map((doom, index)=>{
-    <Todo key={index} />
-  });
+    completed: true,
+  };
   return (
     <>
-    <h1>Hi</h1>
-    <Todo/>
+    <Todo {...toDo}/>
     </>
   );
 }

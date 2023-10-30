@@ -1,14 +1,13 @@
 import {useState} from "react";
 function Todo(props){
-    const [todo, setTodo] = useState(props.doos)
+    const [check, setCheck]= useState(props.completed)
     return(
     <>
-    <h2>Todo</h2>
-    <label>
-        {props.title}
-    </label>
-    <input type="checkbox" />
+        <p>userId:{props.userId}</p>
+        <p>id: {props.id}</p>
+        <p>title: {props.title}</p>
+        <input type="checkbox" checked={check} onChange={(event)=>setCheck(event.target.checked)}></input>
     </>
-    )
+    );
 }
 export default Todo;
