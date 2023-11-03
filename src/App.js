@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 import Comment from "./Comment";
-
+import PostList from "./PostList";
 import Todo from "./Todo";
 
 function App() {
@@ -28,8 +28,8 @@ function App() {
 
   return (
     <>
-    <Comment/>
-    {loading ?<p>Loading...</p>: <Todo {...toDo}/>}
+    <PostList/>
+
     </>
   );
 }

@@ -15,12 +15,14 @@ function Comment(props){
     },[])
     return(
         <>
-        {loading?<p>Loading</p>:[<p>postId:{comment.postId}</p>,
-            <p>id:{comment.id}</p>,
-            <p>name:{comment.name}</p>,
-            <p>email:{comment.email}</p>,
-            <p>body:{comment.body}</p>
-        ]}
+        {loading?<p>Loading</p>:<div>
+                <p>postId:{comment.postId}</p>
+                <p>id:{comment.id}</p>
+                <p>name:{comment.name}</p>
+                <p>email:{comment.email}</p>
+                <p>body:{comment.body}</p>
+            </div>
+            }
         </>
     )
 }
