@@ -1,7 +1,7 @@
 function Post(props){
     return(
         <>
-        <div>
+        <div key={props.index}>
             <p>userId:{props.userId}</p>
             <p>id:{props.id}</p>
             <p>title:{props.title}</p>
