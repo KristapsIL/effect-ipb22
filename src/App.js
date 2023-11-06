@@ -3,6 +3,7 @@ import Comment from "./Comment";
 import PostList from "./PostList";
 import Todo from "./Todo";
 
+
 function App() {
   const [toDo, setTodo] = useState({});
   const [loading, setLoading] = useState(true);
@@ -29,7 +30,6 @@ function App() {
   return (
     <>
     <PostList/>
-
     </>
   );
 }
